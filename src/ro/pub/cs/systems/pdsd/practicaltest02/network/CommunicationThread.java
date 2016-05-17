@@ -51,10 +51,10 @@ public class CommunicationThread extends Thread {
                     ResponseHandler<String> responseHandler = new BasicResponseHandler();
                     String pageSourceCode = httpClient.execute(httpPost, responseHandler);
                     if (pageSourceCode != null) {
-                    	System.out.println(responseHandler);
-                    	if(responseHandler.toString().contains(word)){
-                    		serverThread.setData(responseHandler.toString());
-                    		printWriter.println(responseHandler.toString());
+                    	System.out.println(pageSourceCode);
+                    	if(pageSourceCode.contains(word)){
+                    		serverThread.setData(pageSourceCode);
+                    		printWriter.println(pageSourceCode);
                     	}
                     } else {
                          Log.e(Constants.TAG, "[COMMUNICATION THREAD] Error getting the information from the webservice!");
