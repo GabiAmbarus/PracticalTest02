@@ -9,7 +9,7 @@
     tools:context="ro.pub.cs.systems.pdsd.practicaltest02.PracticalTest02MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/serverText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -20,73 +20,73 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/portServer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/serverText"
         android:layout_marginTop="27dp"
-        android:layout_toLeftOf="@+id/textView1"
+        android:layout_toLeftOf="@+id/serverText"
         android:ems="10" >
 
         <requestFocus />
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignBaseline="@+id/portServer"
+        android:layout_alignBottom="@+id/portServer"
+        android:layout_toRightOf="@+id/serverText"
         android:text="Button" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/portClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/addressClient"
+        android:layout_below="@+id/addressClient"
         android:ems="10"
         android:hint="Port" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textviewClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/buttonConnect"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:text="Client" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/addressClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/textviewClient"
         android:layout_marginTop="14dp"
-        android:layout_toLeftOf="@+id/textView1"
+        android:layout_toLeftOf="@+id/serverText"
         android:ems="10"
         android:hint="Address" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/wordClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
-        android:layout_toLeftOf="@+id/textView1"
+        android:layout_below="@+id/portClient"
+        android:layout_toLeftOf="@+id/serverText"
         android:hint="Word"
         android:ems="10" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonGetInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/buttonConnect"
+        android:layout_below="@+id/wordClient"
         android:text="Get Info" />
 
     <TextView
-      android:id="@+id/weather_forecast_text_view"
+      android:id="@+id/result_text_view"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:singleLine="false"
